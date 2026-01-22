@@ -10,115 +10,163 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-<div class="col-12">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <div class="col-12">
 
-    <body>
-        <header>
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="./img/duck.png" class="w-25" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Dropdown
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-dark">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <form class="d-flex mt-3" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search"
-                                    aria-label="Search" />
-                                <button class="btn btn-success" type="submit">Search</button>
-                            </form>
-                        </div>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./img/duck.png" class="w-25" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
                     </div>
                 </div>
-            </nav>
-</div>
-</header>
-<main>
-
-    <div class="container p-2">
-
-        <div class="row">
-            <div class="col-12 text-dark">
-                <p>Catalogo Libri <button class="btn btn-primary btn-sm float-end">Aggiungi Libro</button></p>
-                <div class="alert" role="alert">
-                    <strong class="me-5">Titolo</strong><span><b class="d-none d-md-block">Data prestito</b><b class="text-center ms-5 ps-5">Stato</b><b class="float-end">Azioni</b></span>
-                </div>
-                <div class="alert alert-secondary" role="alert">
-                    <p class="d-inline-block">I pilastri della terra</p>
-                    <span class="badge text-bg-success ms-5">Disponibile</span>
-                    <button type="button" class="btn btn-outline-secondary btn btn-sm float-end ms-1"><i class="bi bi-trash-fill"></i></button>
-                    <button type="button" class="btn btn-outline-secondary btn btn-sm float-end" disabled><i class="bi bi-pencil-fill"></i></button>
-                </div>
-                <div class="alert alert-success" role="alert">
-                    A simple success alert—check it out!
-                </div>
-                <div class="alert alert-danger" role="alert">
-                    A simple danger alert—check it out!
-                </div>
-                <div class="alert alert-warning" role="alert">
-                    A simple warning alert—check it out!
-                </div>
-                <div class="alert alert-info" role="alert">
-                    A simple info alert—check it out!
-                </div>
-                <div class="alert alert-light" role="alert">
-                    A simple light alert—check it out!
-                </div>
-                <div class="alert alert-dark" role="alert">
-                    A simple dark alert—check it out!
-                </div>
             </div>
+        </nav>
+        </div>
+    </header>
+    <main>
 
-            <div class="col">
-
+        <div class="container p-2">
+            <div class="row">
+                <div class="col">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Titolo</th>
+      <th scope="col"></th>
+      <th scope="col">Stato</th>
+      <th scope="col">Azioni</th>
+    </tr>
+  </thead>
+  <tbody>
+   <tr>
+      <th class="fw-normal">I pilastri della terra</th>
+      <td></td>
+      <td class="badge bg-success py-1 text-white">Disponibile</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="fw-normal">I promessi sposi</th>
+      <td class=""></td>
+      <td class="badge bg-success py-1 mt-2 text-white">Disponibile</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="fw-normal">Il signore degli anelli</th>
+      <td>John</td>
+      <td class="badge bg-warning py-1 mt-2 text-white">In prestito</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="fw-normal">Harry Potter e la pietra filosofale</th>
+      <td>Mark</td>
+      <td class="badge bg-success py-1 mt-2 text-white">Disponibile</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="fw-normal">Il codice Da Vinci</th>
+      <td></td>
+      <td class="badge bg-danger text-white py-1 mt-2">Non disponibile</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="fw-normal">Shining</th>
+      <td></td>
+      <td class="badge bg-success text-white py-1 mt-2">Disponibile</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="fw-normal">La divina commedia</th>
+      <td>Mark</td>
+      <td class="badge bg-warning text-white py-1 mt-2">In prestito</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="fw-normal">Il trono di spade</th>
+      <td>Jacob</td>
+      <td class="badge bg-success text-white py-1 mt-2">Disponibile</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="fw-normal">Il mondo di Sofia</th>
+      <td>John</td>
+      <td class="badge bg-danger text-white py-1 mt-2">Non disponibile</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="fw-normal">Le cronache di Narnia: il leone, la strega e l'armadio</th>
+      <td>Mark</td>
+      <td class="badge bg-warning text-white py-1 mt-3">In prestito</td>
+      <td></td>
+    </tr>
+    <tr class="">
+      <th class="fw-normal bg-opacity-50">Il piccolo Principe</th>
+      <td class=""></td>
+      <td class="badge bg-success text-white py-1">Disponibile</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="fw-normal">La storia infinita</th>
+      <td></td>
+      <td class="badge bg-success text-white py-1 mt-2">Disponibile</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+                </div>
             </div>
         </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
-
-    </div>
-</main>
-<footer>
-    <!-- place footer here -->
-</footer>
-<!-- Bootstrap JavaScript Libraries -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

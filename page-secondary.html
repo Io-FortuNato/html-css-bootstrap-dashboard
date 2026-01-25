@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="">
+    <nav class="navbar navbar-expand-lg text-white bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand text-white" href="#"><img src="./img/duck.png" class="img-fluid w-25" alt=""></a>
+        <div class="collapse navbar-collapse align-left"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link disabled text-white" aria-disabled="true">Catalogo Libri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-secondary" aria-current="page" href="#">Anagrafica Utenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Storico Prestiti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-secondary" aria-disabled="true">Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container ms-5">
+      <h1 class="mb-4 mt-3">Nuovo Libro</h1>
+      <div class="row">
+        <div class="col-sm-6 col-lg-6 ">
+          <h2 class="fw-normal fs-5">Nome Autore</h2>
+        </div>
+        <div class="col-sm-6 col-lg-6">
+          <h2 class="fw-normal fs-5">Cognome Autore</h2>
+        </div>
+        <div class=" col-sm-6 col-lg-6 mb-2">
+          <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore" aria-label="Inserisci il nome dell'autore">
+        </div>
+        <div class="col-sm-6 col-lg-6">
+          <input type="text" class="form-control" placeholder="Inserisci il cognome dell'autore" aria-label="Inserisci il cognome dell'autore">
+        </div>
+        <div class="col-lg-12">
+          <h2 class="fw-normal fs-5">Titolo</h2>
+        </div>
+        <div class="col-lg-12">
+          <input type="text" class="form-control" placeholder="Inserisci il titolo del libro" aria-label="First name">
+        </div>
+        <span class="mb-3">Titolo versione italiana</span>
+        <div class="col-lg-4">
+          <h2 class="fw-normal fs-5 d-sm-none d-lg-inline">Genere</h2>
+        </div>
+        <div class="col-lg-4 d-sm-none d-lg-inline">
+          <h2 class="fw-normal fs-5">Anno di Pubblicazione</h2>
+        </div>
+        <div class="col-lg-4 d-sm-none d-lg-inline">
+          <h2 class="fw-normal fs-5">ISBN#</h2>
+        </div>
+        <h2 class="d-sm-block fw-normal d-lg-none">Genere</h2>
+        <div class="col-lg-4"><select class="form-select" aria-label="Default select example">
+            <option selected>Scegli il genere</option>
+            <option value="1">Maschio</option>
+            <option value="2">Femmina</option>
+            <option value="3">Bipede Contrariato</option>
+          </select></div>
+          <h2 class="d-sm-block d-lg-none fw-normal fs-5">Anno di Pubblicazione</h2>
+        <div class="col-lg-4"><input type="text" class="form-control" placeholder="Inserisci l'anno"
+            aria-label="First name">
+        </div>
+        <h2 class="d-sm-block d-lg-none fw-normal fs-5">ISBN#</h2>
+        <div class="col-lg-4"><input type="text" class="form-control" placeholder="Inserisci il codice ISBN#"
+            aria-label="First name">
+        </div>
+        <hr class="mt-4">
+        <div class="col-lg-6">
+          <h2 class="fw-normal fs-5 d-lg-none">Note</h2>
+        </div>
+        <div class="col-lg-12">
+          <input type="text" class="form-control pb-5" placeholder="Inserisci eventuali note sul libro"
+            aria-label="First name">
+        </div>
+        <div class="form-check ms-3 mt-3">
+          <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+          <label class="form-check-label" for="checkDefault">
+            Disponibile anche in digitale
+          </label>
+        </div>
+        <div><button class="btn bg-primary text-white mt-2 mb-3">Aggiungi Libro</button></div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
